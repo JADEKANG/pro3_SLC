@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+    }
+    
+
+    html {
+        background-color: white;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0; 
+        height: 100vh; 
+        display: flex; 
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    
+    header {
+        padding: auto;   
+        width: 100%;
+        background-color: #2276e5;
+        display: flex;
+    }
+    
+    nav {
+    height: 15%;
+    width: 60%;
+    margin: auto;
+    margin-top: 3.5%;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    }
+  
+     #about, #events, #merch {
+        margin-left: 20%;
+        width: 50%;
+    }
+
+    #about:hover, #events:hover, #merch:hover {
+        transform: scale(1.1);
+    }
+
+    
+    .info {
+        display: flex; 
+        align-items: center;
+        /* justify-content: center; */
+        background-color: #fdfd67;
+        padding: 20px;
+    }
+
+    .mlogo {
+        width: 30%;
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-bottom: 2%;
+    }
+
+    .tplace {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    
+    .info h1 {
+        padding: auto;
+        font-size: 60px;        
+        color: rgb(0, 0, 0);  
+        white-space: nowrap;
+    }
+    
+   .info h2 {
+        font-size: 24px;
+        color: #555;
+        margin-top: 20px;
+    }
+
+    #button {
+        width: 20%;
+        margin-top: 40px;
+        margin-left: 40%;
+    }
+
+    #button:hover {
+        transform: scale(1.1);
+    }
+    
+    /*--------------------*/
+
+    #aboutsection {
+        display: flex; 
+        align-items: center;
+        background-color: white;
+        padding: 5px;
+        margin-bottom: 2%; 
+    }
+
+    .abinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 20px; 
+    }
+
+    .abinfo h1 {
+        font-size: 60px;
+        white-space: nowrap;
+        padding: auto;
+        margin-left: 10%; 
+        margin-top: 5%;
+    }
+
+    .abinfo h3 {
+        background-color: #f0f0f0;     
+        padding: 20px;                 
+        border: 2px solid #e5e522;      
+        border-radius: 10px;         
+        max-width: 800px;             
+        margin-left: 10%;
+        margin-top: 2%;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;             
+        text-align: left; 
+        }
+
+
+    #aboutlg {
+        width: 30%;
+        margin-left: auto; 
+        margin-right: 10%; 
+    }  
+
+    #logo {
+        padding: 1%;
+        width: 35%;
+        margin: auto;
+    }
+
+
+    footer {
+        background-color: #3c53b2;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 20px 0;
+    }
+
+    .love {
+        color: white; 
+        text-decoration: none;
+    }
+ 
