@@ -12,6 +12,7 @@ HTML, CSS
 
 ## Branding Guidelines
 <a href="https://docs.google.com/presentation/d/1bV5ZVRKyDWdPLAKOd3uji-cHOdfk8-M_fNRHJ0L2ReQ/edit?usp=sharing">
+https://docs.google.com/presentation/d/1bV5ZVRKyDWdPLAKOd3uji-cHOdfk8-M_fNRHJ0L2ReQ/edit?usp=sharing 
 
 ## acknowledgement
 Fonts used: 
@@ -21,4 +22,5 @@ Fonts used:
 The Love Yourself Project: https://www.loveyourselfproject.org/
 
 Mockups:
+https://www.mockupworld.co/ 
 <a href="https://www.mockupworld.co/">
