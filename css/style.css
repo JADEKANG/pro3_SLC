@@ -1,23 +1,16 @@
-* {
+    * {
     margin: 0;
-    padding 0;
+    padding: 0;
     box-sizing: border-box;
     }
-    
 
-    html {
-        background-color: white;
+
+    html,body {
+        overflow-x: hidden;
         scroll-behavior: smooth;
     }
 
-    body {
-        margin: 0; 
-        height: 100vh; 
-        display: flex; 
-        flex-direction: column;
-        background-color: white;
-    }
-    
+
     
     header {
         padding: auto;   
@@ -36,7 +29,7 @@
     justify-content: flex-end;
     }
   
-     #about, #events, #merch {
+    #about, #events, #merch {
         margin-left: 20%;
         width: 50%;
     }
@@ -45,19 +38,25 @@
         transform: scale(1.1);
     }
 
+    #logo {
+        padding: 1%;
+        width: 35%;
+        margin: auto;
+    }
     
     .info {
         display: flex; 
+        /* flex-wrap: wrap; */
         align-items: center;
         /* justify-content: center; */
-        background-color: #fdfd67;
+        background-color: #f1b7d4;
         padding: 20px;
     }
 
     .mlogo {
         width: 30%;
         margin-top: 2%;
-        margin-left: 15%;
+        margin-left: 5%;
         margin-bottom: 2%;
     }
 
@@ -67,6 +66,7 @@
         align-items: center;
         margin-bottom: 10%;
         margin-top: 10%;
+        font-family: "Rubik Bubbles", system-ui;
     }
     
     .info h1 {
@@ -78,7 +78,7 @@
     
    .info h2 {
         font-size: 24px;
-        color: #555;
+        color: rgb(75, 71, 71);
         margin-top: 20px;
     }
 
@@ -107,6 +107,8 @@
         flex-direction: column;
         align-items: flex-start;
         margin-right: 20px; 
+        word-wrap: break-word;
+        text-align: center;
     }
 
     .abinfo h1 {
@@ -115,20 +117,24 @@
         padding: auto;
         margin-left: 10%; 
         margin-top: 5%;
+        font-family:  "Rubik Bubbles", system-ui;
     }
 
     .abinfo h3 {
-        background-color: #f0f0f0;     
+        background-color: #fede5f;     
         padding: 20px;                 
-        border: 2px solid #e5e522;      
+        border: 2px dotted #e59d22;      
         border-radius: 10px;         
         max-width: 800px;             
         margin-left: 10%;
         margin-top: 2%;
         font-size: 18px;
-        color: #333;
-        line-height: 1.6;             
-        text-align: left; 
+        color: #e01c8e;
+        font-family: "Caprasimo", serif;
+
+        line-height: 1.6;
+        text-align: justify; 
+        text-justify: inter-word; 
         }
 
 
@@ -136,13 +142,12 @@
         width: 30%;
         margin-left: auto; 
         margin-right: 10%; 
-    }  
+    }   
 
-    #logo {
-        padding: 1%;
-        width: 35%;
-        margin: auto;
+    .first {
+        font-size: 200%;
     }
+
 
 
     footer {
@@ -153,8 +158,117 @@
         padding: 20px 0;
     }
 
-    .love {
-        color: white; 
-        text-decoration: none;
+    #love {
+        width: 20%; 
+        height: auto; 
+        margin: 2px 0; 
     }
- 
+
+    #pt {
+        padding-top: 2%;
+        font-family: "Rubik Bubbles", system-ui;
+        font-size: 20px;
+    }
+
+
+    /* media query*/ 
+
+    @media (max-width: 1200px) {
+        #about, #events, #merch {
+            margin: 5% auto;
+            width: 70%;
+        }
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        #about, #events, #merch {
+            width: 60%;
+            margin: 5%;
+        }
+
+        .info {
+            flex-direction: column; 
+        }
+    
+        .mlogo {
+            width: 50%; 
+            justify-content: center;
+        }
+    
+        .info h1 {
+            font-size: 5vw;
+        }
+    
+        .info h2 {
+            font-size: 2vw;
+        }
+    
+        #button {
+            max-width: 400px;
+        }
+    
+        #aboutsection {
+            flex-direction: column; 
+            align-items: center;
+            text-align: center;
+        }
+    
+        .abinfo h1 {
+            font-size: 4vw;
+        }
+    
+        .abinfo h3 {
+            max-width: 90%;
+        }
+
+        #aboutlg {
+            margin: 20px auto; 
+            display: block;    
+            align-items: center;
+        }
+
+        #love {
+            width: 30%; 
+        }
+    }
+
+
+@media (max-width: 480px) {
+
+   #about, #events, #merch {
+        width: 80%;
+        margin: 5% auto;
+    }
+
+
+    .info h1, .abinfo h1 {
+        font-size: 6vw;
+    }
+
+    .info h2, .abinfo h3 {
+        font-size: 3vw;
+    }
+
+    .mlogo, #aboutlg {
+        width: 80%;
+    }
+
+    #button {
+        width: 100px;
+    }
+
+    #aboutlg {
+        margin: 20px auto; 
+        display: block;   
+        align-items: center;
+    }
+
+    #love {
+        width: 30%; 
+    }
+}

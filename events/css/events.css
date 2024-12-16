@@ -1,0 +1,233 @@
+/* 
+.rubik-bubbles-regular {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
+
+   .caprasimo-regular {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+
+    
+    header {
+        padding: auto;   
+        width: 100%;
+        background-color: #2276e5;
+        display: flex;
+    }
+    
+    nav {
+    height: 15%;
+    width: 60%;
+    margin: auto;
+    margin-top: 3.5%;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    }
+  
+     #about, #events, #merch {
+        margin-left: 20%;
+        width: 50%;
+    }
+
+    #about:hover, #merch:hover {
+        transform: scale(1.1);
+    }
+
+    #logo {
+        padding: 1%;
+        width: 35%;
+        margin: auto;
+    }
+
+    footer {
+        background-color: #3c53b2;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 20px 0;
+    }
+
+    #love {
+        width: 20%; 
+        height: auto; 
+        margin: 2px 0; 
+    }
+
+    #pt {
+        padding-top: 2%;
+        font-family: "Rubik Bubbles", system-ui;
+        font-size: 20px;
+    }
+
+    /*section*/ 
+
+    .day1, .day2, .day3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 10%; 
+        font-family: "Rubik Bubbles", system-ui;
+    }
+
+    .day1 {
+        background-color: white;
+    }
+
+    .day1info {
+        margin-left: 10%;
+    }
+
+    .day1info h1 {
+        font-size: 200%;
+        color: #247ff6;
+    }
+
+    .day1info h3 {
+        color:rgb(242, 22, 139);
+    }
+    
+    #opening, #popup {
+        padding-top: 3%;
+    }
+
+    #popup h4 {
+        padding-left: 3%;
+    }
+
+
+    .day2 {
+        background-color: rgb(254, 240, 130);
+    }
+
+    .day2info {
+        margin-right: 10%;
+    }
+
+    .day2info h1 {
+        font-size: 200%;
+        color: rgb(242, 22, 139);
+    }
+
+    #bts {
+        padding-top: 3%;
+    }
+
+    .pp {
+        color: #9a32cb;
+    }
+
+    .day3 {
+        background-color: rgb(242, 22, 139);
+    }
+
+
+    .day3info {
+        margin-left: 10%;
+    }
+
+
+    .day3info h1 {
+        font-size: 200%;
+        color: rgb(254, 237, 108);
+    }
+
+    #ts {
+        padding-top: 3%;
+    }
+ 
+    .name {
+        color: white; 
+    }
+
+
+/*media query*/
+
+@media (max-width: 1200px) {
+    #about, #events, #merch {
+        margin: 5% auto;
+        width: 70%;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .day1info, .day2info, .day3info {
+        margin: 5%;
+    }
+
+    #love {
+        width: 30%; 
+    }
+}
+
+@media (max-width: 768px) {
+    #about, #events, #merch {
+        width: 60%;
+        margin: 5%;
+    }
+    .day1, .day2, .day3 { 
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+    .day1info, .day2info, .day3info {
+        margin: 0;
+        padding: 5%;
+    }
+    .day {
+        width: 80%;
+        margin: 10px auto;
+    }
+    h1 {
+        font-size: 150%;
+    }
+
+    #love {
+        width: 30%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #about, #events, #merch {
+        width: 80%;
+        margin: 5% auto;
+    }
+    .day1, .day2, .day3 {
+        flex-direction: column;
+        padding: 5%;
+    }
+    .day1info h1, .day2info h1, .day3info h1 {
+        font-size: 120%;
+    }
+    .day1info h3, .day2info h3, .day3info h4 {
+        font-size: 100%;
+    }
+    .day {
+        width: 90%;
+        margin: 5% auto;
+    }
+    footer {
+        font-size: 80%;
+    }
+
+    #love {
+        width: 30%; 
+    }
+}

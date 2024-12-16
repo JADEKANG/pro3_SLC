@@ -1,0 +1,282 @@
+    /* 
+.rubik-bubbles-regular {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
+    
+    
+    * {
+    box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        padding: auto;   
+        width: 100%;
+        background-color: #2276e5;
+        display: flex;
+    }
+    
+    nav {
+    height: 15%;
+    width: 60%;
+    margin: auto;
+    margin-top: 3.5%;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    }
+  
+     #about, #events, #merch {
+        margin-left: 20%;
+        width: 50%;
+    }
+
+    #about:hover, #events:hover {
+        transform: scale(1.1);
+    }
+
+    #logo {
+        padding: 1%;
+        width: 35%;
+        margin: auto;
+    }
+
+    #hd {
+        width: 31%;
+    }
+
+    #case {
+        width: 35%;
+    }
+
+    /*section*/
+    
+    .merch {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+    }
+    
+    #melogo {
+        margin: 3%;
+        width: 60%;
+        display: block; 
+    }
+
+    .mockup {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        background-color: rgb(209, 55, 130);
+        height: 100%;
+    }
+
+
+    #first, #second {
+        position: relative; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    #first img, #second img {
+        transition: 0.3s ease; 
+        width: 35%; 
+        height: auto;
+        display: block;
+    }
+    
+    #first img:hover, #second img:hover {
+        filter: brightness(50%); 
+    }
+    
+    
+    .buy-button {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -150%); 
+        font-size: 1.5rem; 
+        color: white;
+        font-family: "Rubik Bubbles", system-ui;
+        font-weight: bold; 
+        opacity: 0; 
+        pointer-events: none; 
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+    
+
+    #first:hover .buy-button, #second:hover .buy-button {
+        opacity: 1; 
+    }
+    
+    #first img, #second img {
+        z-index: 0; 
+    }
+    
+    .price {
+        margin-top: 2%;
+    }
+
+
+
+    
+    #first h1, #second h1 {
+        margin: 0;
+        display: flex;
+        flex-direction: column; 
+        text-align: center; 
+        font-family: "Rubik Bubbles", system-ui;
+        font-size: 40px;
+    }
+    
+    #first h3, #second h3 {
+        margin: 0;
+        font-size: 1rem; 
+        text-align: center;
+        font-family: "Rubik Bubbles", system-ui;
+        font-size: 20px;
+    }
+    
+
+    #hd, #case {
+        width: 300px; 
+        height: auto;
+    }
+    
+
+/* Footer */
+footer {
+    background-color: #3c53b2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+    position: relative; }
+
+#love {
+    width: 20%; 
+    height: auto; 
+    margin: 2px 0; 
+}
+
+#pt {
+    padding-top: 2%;
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 20px;
+}
+
+
+
+/*media query*/ 
+
+
+@media (max-width: 1200px) {
+    #about, #events, #merch {
+        margin: 5% auto;
+        width: 70%;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #love {
+        width: 30%; 
+    }
+}
+
+
+
+    @media (max-width: 768px) {
+        nav {
+            width: 80%;
+            margin-top: 2%;
+            justify-content: space-around;
+        }
+
+        #about, #events, #merch {
+            margin-left: 10%;
+            width: 40%;
+        }
+
+        #melogo {
+            width: 80%;
+        }
+
+        .mockup {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        #first, #second {
+            margin: 10px 0;
+        }
+
+        #first img, #second img {
+            width: 60%;
+        }
+
+        .price h1 {
+            font-size: 1.5rem;
+        }
+
+        .price h3 {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        #about, #events, #merch {
+            width: 70%;
+            margin: 10px 0;
+        }
+
+        .mockup {
+            width: 100%;
+        }
+
+        #first img, #second img {
+            width: 80%;
+        }
+
+        .buy-button {
+            font-size: 1.2rem;
+        }
+
+        #pt {
+            font-size: 1rem;
+        }
+
+        #love {
+            width: 40%;
+        }
+    }
+
